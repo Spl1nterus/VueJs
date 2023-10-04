@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useGetEmployees } from '@/shared/hooks/useGetEmployees'
+import { useGetEmployees } from '@/shared/hooks'
 
 const { employees } = useGetEmployees()
 </script>

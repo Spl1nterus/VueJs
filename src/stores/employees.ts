@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
-import { employees } from '../shared/mocks/employees'
-import type { Employee } from '../shared/interfases/Employee'
+import type { Employee } from '../shared/interfases'
+import { getEmployees } from '@/shared/api'
 
 export const useEmployeesStore = defineStore('employees', {
   state: () => {
@@ -14,7 +14,7 @@ export const useEmployeesStore = defineStore('employees', {
     async fetchEmployeesAsync() {
       this.loading = true
       try {
-        this.employees = employees
+        this.employees = getEmployees()
       } catch (e) {
         console.log('ERROR: getJobFieldSettingsListAsync', e)
       } finally {

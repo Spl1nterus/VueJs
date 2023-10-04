@@ -1,4 +1,4 @@
-import type { Employee } from '../interfases/Employee'
+import type { Employee } from '../interfases'
 
 export const employees: Employee[] = [
   {
