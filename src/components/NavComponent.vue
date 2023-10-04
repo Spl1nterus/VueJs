@@ -28,7 +28,7 @@ import { UserOutlined } from '@ant-design/icons-vue'
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .header {
   display: flex;
   align-items: center;

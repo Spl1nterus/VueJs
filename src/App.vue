@@ -9,9 +9,15 @@ import NavComponent from './components/NavComponent.vue'
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
     <NavComponent />
     <v-main>
-      <RouterView />
+      <a-layout-content class="page_wrap">
+        <RouterView />
+      </a-layout-content>
     </v-main>
   </v-app>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.page_wrap {
+  padding: 12px;
+}
+</style>
