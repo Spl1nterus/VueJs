@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useGetEmployees } from '@/shared/hooks'
 import { PlusCircleFilled } from '@ant-design/icons-vue'
-import { h } from 'vue'
-
 const { employees } = useGetEmployees()
 const columns = [
   { title: 'Name', dataIndex: 'name', key: 'name' },
